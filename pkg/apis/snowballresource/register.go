@@ -1,3 +1,3 @@
-package snowballcontroller
+package snowballresource
 
 const GroupName = "snowball.com"
