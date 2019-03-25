@@ -28,8 +28,10 @@ func Resource(resource string) schema.GroupResource {
 // create a SchemeBuilder which uses functions to add types to
 // the scheme
 
-var AddToScheme = runtime.NewSchemeBuilder(addKnownTypes).AddToScheme
-
+var (
+	SchemeBuilder = runtime.NewSchemeBuilder(addKnownTypes)
+	AddToScheme   = SchemeBuilder.AddToScheme
+)
 
 // addKnownTypes adds our types to the API scheme by registering
 // SnowballResource and SnowballResourceList

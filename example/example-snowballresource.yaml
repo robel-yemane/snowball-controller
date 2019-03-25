@@ -1,0 +1,7 @@
+apiVersion: snowball.com/v1
+kind: SnowballResource
+metadata:
+  name: example-snowballresource
+spec:
+  message: hello world
+  someValue: 13
